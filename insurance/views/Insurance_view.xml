@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+        <record model="ir.actions.act_window" id="policy_list_action">
+        <field name="name">Policies</field>
+        <field name="res_model">insurance.policy</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form,calendar</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first policy.</p>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="payment_list_action">
+        <field name="name">PaymentPlan</field>
+        <field name="res_model">insurance.paymentplan</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.ui.view" id="policy_form_view">
+        <field name="name">policy.form</field>
+        <field name="model">insurance.policy</field>
+        <field name="arch" type="xml">
+            <form string="Policy Form">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"></field>
+                            <field name="vendor_id"></field>
+                            <field name="start_date"></field>
+                            <field name="end_date"></field>
+                            <field name="date_of_issue"></field>
+                        </group>
+                        <group>
+                            <field name="total_amount"></field>
+                            <field name="total_payment"></field>
+                            <field name="type"></field>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description"></field>
+                        </page>
+                        <page string="Payment Plan">
+                            <field name="paymentplan_ids">
+                                <tree string="Payment Plan">
+                                    <field name="amount"></field>
+                                    <field name="period"></field>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="About">
+                            about insurance policy
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="insurance_search_view">
+        <field name="name">insurance.policy.search</field>
+        <field name="model">insurance.policy</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"></field>
+                <field name="description"></field>
+                <field name="vendor_id"></field>
+                <group expand="0" name="group_by" string="Group By">
+                   <filter name="group_vendor" string="Vendor" context="{'group_by': 'vendor_id'}"/>
+               </group>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="insurance_search_view2">
+        <field name="name">insurance.paymentplan.search</field>
+        <field name="model">insurance.paymentplan</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"></field>
+                <field name="period"></field>
+                <filter name="is_paid" string="is paid?" domain="[('paid', '=', 'True')]"></filter>
+            </search>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="insurance_tree_view">
+        <field name="name">insurance.payment.tree</field>
+        <field name="model">insurance.paymentplan</field>
+        <field name="arch" type="xml">
+            <tree string="Links Tree" decoration-info="paid==True" decoration-danger="paid==False">
+                <field name="name"></field>
+                <field name="amount"></field>
+                <field name="policy_id"></field>
+                <field name="paid"></field>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="policy_calendar_view">
+        <field name="name">policy.calendar</field>
+        <field name="model">insurance.policy</field>
+        <field name="arch" type="xml">
+            <calendar string="Policy Calendar" date_start="start_date" date_stop="end_date" color="vendor_id">
+                <field name="name"></field>
+            </calendar>
+        </field>
+    </record>
+
+
+    <menuitem id="main_insurance_menu" name="Insurance"></menuitem>
+    <menuitem id="policy_main_menu" name="Policy" parent="main_insurance_menu"></menuitem>
+    <menuitem id="policy_menu" name="Policies" parent="policy_main_menu"
+                  action="policy_list_action"/>
+    <menuitem id="payment_menu" name="Payment Plan" parent="policy_main_menu"
+                  action="payment_list_action"/>
+</odoo>
