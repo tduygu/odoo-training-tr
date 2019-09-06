@@ -1,0 +1,264 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* insurance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-06 06:37+0000\n"
+"PO-Revision-Date: 2019-09-06 09:51+0300\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: tr\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: insurance
+#: model_terms:ir.ui.view,arch_db:insurance.policy_form_view
+msgid "About"
+msgstr ""
+
+#. module: insurance
+#: model:ir.model.fields,help:insurance.field_insurance_paymentplan__amount
+msgid "Amount to be paid"
+msgstr "Ödenmesi gereken miktar"
+
+#. module: insurance
+#: selection:insurance.paymentplan,period:0
+msgid "April"
+msgstr "Nisan"
+
+#. module: insurance
+#: model_terms:ir.actions.act_window,help:insurance.policy_list_action
+msgid "Create the first policy."
+msgstr "İlk poliçeyi yaratın"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_paymentplan__create_uid
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_paymentplan__create_date
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__create_date
+msgid "Created on"
+msgstr "Oluşturulma"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__date_of_issue
+msgid "Date of issue"
+msgstr ""
+
+#. module: insurance
+#: model_terms:ir.ui.view,arch_db:insurance.policy_form_view
+msgid "Description"
+msgstr "Açıklama"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_paymentplan__display_name
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__display_name
+msgid "Display Name"
+msgstr "Görünüm Adı"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__end_date
+msgid "End Date"
+msgstr "Bitiş Tarihi"
+
+#. module: insurance
+#: selection:insurance.paymentplan,period:0
+msgid "February"
+msgstr "Şubat"
+
+#. module: insurance
+#: model_terms:ir.ui.view,arch_db:insurance.insurance_search_view
+msgid "Group By"
+msgstr "Grupla"
+
+#. module: insurance
+#: selection:insurance.policy,type:0
+msgid "Health"
+msgstr "Sağlık"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_paymentplan__id
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__id
+msgid "ID"
+msgstr ""
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_paymentplan__amount
+msgid "Installment"
+msgstr "Taksit"
+
+#. module: insurance
+#: model:ir.ui.menu,name:insurance.main_insurance_menu
+msgid "Insurance"
+msgstr "Sigorta"
+
+#. module: insurance
+#: model:ir.model,name:insurance.model_insurance_paymentplan
+msgid "Insurance Payment Plan"
+msgstr "Sigorta Ödeme Planı"
+
+#. module: insurance
+#: model:ir.model,name:insurance.model_insurance_policy
+msgid "Insurance Policy"
+msgstr "Sigorta Poliçesi"
+
+#. module: insurance
+#: selection:insurance.paymentplan,period:0
+msgid "January"
+msgstr "Ocak"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_paymentplan____last_update
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy____last_update
+msgid "Last Modified on"
+msgstr "Son Güncelleme"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_paymentplan__write_uid
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_paymentplan__write_date
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme"
+
+#. module: insurance
+#: selection:insurance.policy,type:0
+msgid "Life"
+msgstr "Hayat"
+
+#. module: insurance
+#: model_terms:ir.ui.view,arch_db:insurance.insurance_tree_view
+msgid "Links Tree"
+msgstr ""
+
+#. module: insurance
+#: selection:insurance.paymentplan,period:0
+msgid "March"
+msgstr "Mart"
+
+#. module: insurance
+#: selection:insurance.paymentplan,period:0
+msgid "May"
+msgstr "Mayıs"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_paymentplan__name
+msgid "Name"
+msgstr "İsim"
+
+#. module: insurance
+#: selection:insurance.policy,type:0
+msgid "Not Applicable"
+msgstr "Diğer"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_paymentplan__paid
+msgid "Paid?"
+msgstr ""
+
+#. module: insurance
+#: model:ir.ui.menu,name:insurance.payment_menu
+#: model_terms:ir.ui.view,arch_db:insurance.policy_form_view
+msgid "Payment Plan"
+msgstr "Ödeme Plan"
+
+#. module: insurance
+#: model:ir.actions.act_window,name:insurance.payment_list_action
+msgid "PaymentPlan"
+msgstr "Ödeme Planı"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__paymentplan_ids
+msgid "Paymentplan"
+msgstr "Ödeme Planı"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_paymentplan__period
+msgid "Period"
+msgstr "Dönem"
+
+#. module: insurance
+#: model:ir.actions.act_window,name:insurance.policy_list_action
+#: model:ir.ui.menu,name:insurance.policy_menu
+msgid "Policies"
+msgstr "Poliçeler"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_paymentplan__policy_id
+#: model:ir.ui.menu,name:insurance.policy_main_menu
+msgid "Policy"
+msgstr "Poliçe"
+
+#. module: insurance
+#: model_terms:ir.ui.view,arch_db:insurance.policy_calendar_view
+msgid "Policy Calendar"
+msgstr "Poliçe Takvimi"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__description
+msgid "Policy Details"
+msgstr "Poliçe Detayları"
+
+#. module: insurance
+#: model_terms:ir.ui.view,arch_db:insurance.policy_form_view
+msgid "Policy Form"
+msgstr "Poliçe Formu"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__name
+msgid "Policy No"
+msgstr "Poliçe No"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__type
+msgid "Policy Type"
+msgstr "Poliçe Çeşidi"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__start_date
+msgid "Start Date"
+msgstr "Başlangıç Tarihi"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__total_amount
+msgid "Total Amount"
+msgstr "Toplam Miktar"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__total_payment
+msgid "Total Payment"
+msgstr "Toplam Ödeme"
+
+#. module: insurance
+#: selection:insurance.policy,type:0
+msgid "Transport"
+msgstr "Nakliye"
+
+#. module: insurance
+#: model:ir.model.fields,field_description:insurance.field_insurance_policy__vendor_id
+#: model_terms:ir.ui.view,arch_db:insurance.insurance_search_view
+msgid "Vendor"
+msgstr "Sigorta Firması"
+
+#. module: insurance
+#: model_terms:ir.ui.view,arch_db:insurance.policy_form_view
+msgid "about insurance policy"
+msgstr "sigorta poliçesi hakkında"
+
+#. module: insurance
+#: model_terms:ir.ui.view,arch_db:insurance.insurance_search_view2
+msgid "is paid?"
+msgstr "ödendi mi?"
