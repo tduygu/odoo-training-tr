@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.actions.act_window" id="course_list_action">
+        <field name="name">Courses</field>
+        <field name="res_model">codeacademy.course</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context" eval="{'search_default_my_courses' : 1}"></field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create the first course.</p>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="session_list_action">
+        <field name="name">Sessions</field>
+        <field name="res_model">codeacademy.session</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form,calendar,graph</field>
+    </record>
+
+    <record model="ir.ui.view" id="course_form_view">
+        <field name="name">course.form</field>
+        <field name="model">codeacademy.course</field>
+        <field name="arch" type="xml">
+            <form string="Course Form">
+                <sheet>
+                    <group>
+                        <field name="name"></field>
+                        <field name="responsible_id"></field>
+                    </group>
+                    <notebook>
+                        <page string="Açıklama">
+                            <field name="description"></field>
+                        </page>
+                        <page string="Sessions">
+                            <field name="session_ids">
+                                <tree string="Registered sessions">
+                                    <field name="name"></field>
+                                    <field name="instructor_id"></field>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Hakkında">
+                            Kurs hakkında detaylı bilgi için kurs@tai.com.tr'ye eposta gönderiniz.
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="session_form_view">
+        <field name="name">session.form</field>
+        <field name="model">codeacademy.session</field>
+        <field name="arch" type="xml">
+            <form string="Session Form">
+                <sheet>
+                    <group>
+                        <group string="General">
+                            <field name="course_id"></field>
+                            <field name="name"></field>
+                            <field name="instructor_id"></field>
+                            <field name="active"></field>
+                        </group>
+                        <group string="Schedule">
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+<!--                            <field name="end_date2"/>-->
+                            <field name="duration"/>
+                            <field name="seats"/>
+                            <field name="taken_seats" widget="progressbar"/>
+                        </group>
+                        <label for="attendee_ids"></label>
+                        <field name="attendee_ids"></field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="session_tree_view">
+            <field name="name">session.tree</field>
+            <field name="model">codeacademy.session</field>
+            <field name="arch" type="xml">
+                <tree string="Session Tree" decoration-info="duration&lt;5" decoration-danger="duration&gt;15">
+                    <field name="name"/>
+                    <field name="course_id"/>
+                    <field name="duration" invisible="1"></field>
+                    <field name="taken_seats" widget="progressbar"/>
+                </tree>
+            </field>
+        </record>
+
+
+    <record model="ir.ui.view" id="course_search_view">
+        <field name="name">course.search</field>
+        <field name="model">codeacademy.course</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"></field>
+                <field name="description"></field>
+                <filter name="my_courses" string="My Courses" domain="[('responsible_id', '=', uid)]"></filter>
+                <group string="Group By">
+                    <filter name="by_responsible" string="Responsible" context="{'group by': 'responsible_id'}"></filter>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="course_tree_view">
+        <field name="name">course.tree</field>
+        <field name="model">codeacademy.course</field>
+        <field name="arch" type="xml">
+            <tree string="Course Tree">
+                <field name="name"></field>
+                <field name="responsible_id"></field>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="session_calendar_view">
+        <field name="name">session.calendar</field>
+        <field name="model">codeacademy.session</field>
+        <field name="arch" type="xml">
+            <calendar string="Session Calendar" date_start="start_date" date_stop="end_date" color="instructor_id">
+                <field name="name"></field>
+            </calendar>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="codeacademy_session_graph_view">
+        <field name="name">codeacademy.session.graph</field>
+        <field name="model">codeacademy.session</field>
+        <field name="arch" type="xml">
+            <graph string="Participations by course">
+                <field name="course_id"></field>
+                <field name="attendees_count" type="measure"></field>
+            </graph>
+        </field>
+    </record>
+
+<!--    <record model="ir.ui.view" id="session_gantt_view">-->
+<!--        <field name="name">session.gantt</field>-->
+<!--        <field name="model">codeacademy.session</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <gantt string="Session Gantt"-->
+<!--                   date_start="start_date" date_delay="hours"-->
+<!--                   default_group_by='instructor_id'>-->
+<!--            </gantt>-->
+<!--        </field>-->
+<!--    </record>-->
+
+
+
+    <menuitem id="main_codeacademy_menu" name="Code Academy"></menuitem>
+    <menuitem id="codeacademy_menu" name="Code Academy" parent="main_codeacademy_menu"></menuitem>
+    <menuitem id="courses_menu" name="Courses" parent="codeacademy_menu"
+                  action="course_list_action"/>
+         <menuitem id="session_menu" name="Sessions" parent="codeacademy_menu"
+              action="session_list_action"/>
+</odoo>

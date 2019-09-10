@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_codeacademy_codeacademy,codeacademy.codeacademy,model_codeacademy_codeacademy,base.group_user,1,1,1,1
+access_codeacademy_course,codeacademy.course,model_codeacademy_course,base.group_user,1,1,1,1
+access_codeacademy_session,codeacademy.session,model_codeacademy_session,base.group_user,1,1,1,1
+access_codeacademy_partner,codeacademy.partner,model_codeacademy_partner,base.group_user,1,1,1,1
