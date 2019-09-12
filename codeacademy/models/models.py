@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from datetime import timedelta
-from odoo import models, fields, api, exceptions
+from odoo import models, fields, api, exceptions, _
 
 class codeacademy(models.Model):
     _name = 'codeacademy.codeacademy'
@@ -15,19 +15,19 @@ class Course(models.Model):
     name = fields.Char(string="Title", required=True)
     description = fields.Text()
 
-    responsible_id = fields.Many2one('res.users',ondelete='set null', string="Responsible", index=True)
-    session_ids = fields.One2many('codeacademy.session','course_id', string="Sessions")
+    responsible_id = fields.Many2one('res.users', ondelete='set null', string="Responsible", index=True)
+    session_ids = fields.One2many('codeacademy.session', 'course_id', string="Sessions")
 
     @api.multi
     def copy(self, default=None):
         default = dict(default or {})
 
         copied_count = self.search_count(
-            [('name', '=like', u"Copy of {}%".format(self.name))])
+            [('name', '=like', _(u"Copy of {}%").format(self.name))])
         if not copied_count:
-            new_name = u"Copy of {}".format(self.name)
+            new_name = _(u"Copy of {}").format(self.name)
         else:
-            new_name = u"Copy of {} ({})".format(self.name, copied_count)
+            new_name = _(u"Copy of {} ({})").format(self.name, copied_count)
 
         default['name'] = new_name
         return super(Course, self).copy(default)
@@ -68,6 +68,7 @@ class Session(models.Model):
     # end_date2 = fields.Date(string="End Date 2", store=True, compute='_get_end_date', inverse='_set_end_date')
     #
     # hours = fields.Float(string="Duration in hours", compute='_get_hours', inverse='_set_hours')
+    color = fields.Integer()
 
     @api.depends('seats', 'attendee_ids')
     def _taken_seats(self):
@@ -82,15 +83,15 @@ class Session(models.Model):
         if self.seats < 0:
             return {
                 'warning': {
-                    'title': "Seats alanı için geçersiz değer",
-                    'message': "Katılımcı sayısı alanı negatif değer alamaz.",
+                    'title': _("Incorrect seats value"),
+                    'message': _("The number of available seats may not be negative"),
                 },
             }
         if self.seats < len(self.attendee_ids):
             return {
                 'warning': {
-                    'title': "Katılımcı sayısı fazla",
-                    'message': "Uygun yer sayısını arttırın veya katılımcı sayısını azaltın",
+                    'title': "Too many attendees",
+                    'message': "Increase seats or remove excess attendees",
                 },
             }
 

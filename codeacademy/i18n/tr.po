@@ -1,0 +1,760 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* codeacademy
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-12 11:35+0000\n"
+"PO-Revision-Date: 2019-09-12 11:35+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.view_openacad_session_kanban
+msgid "<br/>\n"
+"                                    Start date:"
+msgstr ""
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.view_openacad_session_kanban
+msgid "<br/>\n"
+"                                    duration:"
+msgstr ""
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.view_openacad_session_kanban
+msgid "<i class=\"fa fa-bars fa-lg\" title=\"Manage\" aria-label=\"Manage\"/>"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__active
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__active
+msgid "Active"
+msgstr "Etkin"
+
+#. module: codeacademy
+#: model:ir.actions.act_window,name:codeacademy.launch_session_wizard
+#: model_terms:ir.ui.view,arch_db:codeacademy.wizard_form_view
+msgid "Add Attendees"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__type
+msgid "Address Type"
+msgstr "Adres Türü"
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__lang
+msgid "All the emails and documents sent to this contact will be translated in this language."
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__session_ids
+msgid "Attended Sessions"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_wizard__session_attendees
+msgid "Attendee"
+msgstr "Katılımcı"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__attendee_ids
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_wizard__attendee_ids
+msgid "Attendees"
+msgstr "Katılımcılar"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__attendees_count
+msgid "Attendees count"
+msgstr "Katılımcı sayısı"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.course_form_view
+msgid "Açıklama"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__bank_ids
+msgid "Banks"
+msgstr "Bankalar"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__barcode
+msgid "Barcode"
+msgstr "Barkod"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.wizard_form_view
+msgid "Cancel"
+msgstr "İptal"
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__is_company
+msgid "Check if the contact is a company, otherwise it is a person"
+msgstr "Kontak bir firma olup olmadığını kontrol edin, aksi takdirde bir personeldir"
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__customer
+msgid "Check this box if this contact is a customer. It can be selected in sales orders."
+msgstr "Eğer kontak bir müşteri ise bu kutuyu işaretleyin. Böylece satış siparişlerinde seçilebilir olacaktır."
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__supplier
+msgid "Check this box if this contact is a vendor. It can be selected in purchase orders."
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__employee
+msgid "Check this box if this contact is an Employee."
+msgstr "Bu kontak bir çalışan ise bu kutuyu işaretleyin"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__city
+msgid "City"
+msgstr "Semt/İlçe"
+
+#. module: codeacademy
+#: model:ir.ui.menu,name:codeacademy.codeacademy_menu
+#: model:ir.ui.menu,name:codeacademy.main_codeacademy_menu
+msgid "Code Academy"
+msgstr "Kod Akademisi"
+
+#. module: codeacademy
+#: model:ir.model,name:codeacademy.model_codeacademy_course
+msgid "Code Academy Courses"
+msgstr ""
+
+#. module: codeacademy
+#: model:res.groups,name:codeacademy.group_manager
+msgid "CodeAcademy / Manager"
+msgstr "Kod Akademi / Yönetici"
+
+#. module: codeacademy
+#: model:ir.model,name:codeacademy.model_codeacademy_session
+msgid "CodeAcademy Sessions"
+msgstr "Kod Akademi Oturumları"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__color
+msgid "Color"
+msgstr "Renk"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__color
+msgid "Color Index"
+msgstr "Renk"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__commercial_partner_id
+msgid "Commercial Entity"
+msgstr "Ticari Varlık"
+
+#. module: codeacademy
+#: selection:codeacademy.partner,company_type:0
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__company_id
+msgid "Company"
+msgstr "Şirket"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__company_name
+msgid "Company Name"
+msgstr "Şirket Adı"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__commercial_company_name
+msgid "Company Name Entity"
+msgstr "Firma Adı Varlığı"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__company_type
+msgid "Company Type"
+msgstr "Şirket Türü"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__contact_address
+msgid "Complete Address"
+msgstr "Tam Adres"
+
+#. module: codeacademy
+#: model:ir.ui.menu,name:codeacademy.configuration_menu
+msgid "Configuration"
+msgstr "Yapılandırma"
+
+#. module: codeacademy
+#: selection:codeacademy.partner,type:0
+msgid "Contact"
+msgstr "İletişim"
+
+#. module: codeacademy
+#: model:ir.actions.act_window,name:codeacademy.contact_list_action
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__child_ids
+#: model:ir.ui.menu,name:codeacademy.contact_menu
+msgid "Contacts"
+msgstr "Kontaklar"
+
+#. module: codeacademy
+#: code:addons/codeacademy/models/models.py:28
+#, python-format
+msgid "Copy of {}"
+msgstr ""
+
+#. module: codeacademy
+#: code:addons/codeacademy/models/models.py:30
+#, python-format
+msgid "Copy of {} ({})"
+msgstr ""
+
+#. module: codeacademy
+#: code:addons/codeacademy/models/models.py:26
+#, python-format
+msgid "Copy of {}%"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__country_id
+msgid "Country"
+msgstr "Ülke"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__course_id
+msgid "Course"
+msgstr ""
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.course_form_view
+msgid "Course Form"
+msgstr ""
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.course_tree_view
+msgid "Course Tree"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.actions.act_window,name:codeacademy.course_list_action
+#: model:ir.ui.menu,name:codeacademy.courses_menu
+msgid "Courses"
+msgstr ""
+
+#. module: codeacademy
+#: model_terms:ir.actions.act_window,help:codeacademy.course_list_action
+msgid "Create the first course."
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_codeacademy__create_uid
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_course__create_uid
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__create_uid
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__create_uid
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_wizard__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_codeacademy__create_date
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_course__create_date
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__create_date
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__create_date
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_wizard__create_date
+msgid "Created on"
+msgstr "Oluşturulma"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__credit_limit
+msgid "Credit Limit"
+msgstr "Kredi Limiti"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__date
+msgid "Date"
+msgstr "Tarih"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.view_openacad_session_kanban
+msgid "Delete"
+msgstr "Sil"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_course__description
+msgid "Description"
+msgstr "Açıklama"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_codeacademy__display_name
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_course__display_name
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__display_name
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__display_name
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_wizard__display_name
+msgid "Display Name"
+msgstr "Görünüm Adı"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__duration
+msgid "Duration"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_session__duration
+msgid "Duration in days"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__partner_share
+msgid "Either customer (not a user), either shared user. Indicated the current partner is a customer without access or with a limited access created for sharing data."
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__email
+msgid "Email"
+msgstr "Eposta"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__employee
+msgid "Employee"
+msgstr "Personel"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__end_date
+msgid "End Date"
+msgstr "Bitiş Tarihi"
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__email_formatted
+msgid "Format email address \"Name <email@domain>\""
+msgstr "E-posta adresini \"Ad <email @ alan adı>\" şeklinde biçimlendirin"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__email_formatted
+msgid "Formatted Email"
+msgstr "Biçimlendirilmiş E-posta"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.session_form_view
+msgid "General"
+msgstr "Genel"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.course_search_view
+msgid "Group By"
+msgstr "Grupla"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.course_form_view
+msgid "Hakkında"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_codeacademy__id
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_course__id
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__id
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__id
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__image
+msgid "Image"
+msgstr "Görsel"
+
+#. module: codeacademy
+#: code:addons/codeacademy/models/models.py:86
+#, python-format
+msgid "Incorrect seats value"
+msgstr "Oturma alanı sayısı için geçersiz değer"
+
+#. module: codeacademy
+#: selection:codeacademy.partner,company_type:0
+msgid "Individual"
+msgstr "Şahıs"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__industry_id
+msgid "Industry"
+msgstr "Endüstri"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__is_instructor
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__instructor_id
+msgid "Instructor"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__ref
+msgid "Internal Reference"
+msgstr "İç Referans"
+
+#. module: codeacademy
+#: selection:codeacademy.partner,type:0
+msgid "Invoice address"
+msgstr "Fatura Adresi"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__is_company
+msgid "Is a Company"
+msgstr "Bu bir Firmamı"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__customer
+msgid "Is a Customer"
+msgstr "Müşteri"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__supplier
+msgid "Is a Vendor"
+msgstr "Tedarikçi"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__function
+msgid "Job Position"
+msgstr "İş Pozisyonu"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.course_form_view
+msgid "Kurs hakkında detaylı bilgi için kurs@tai.com.tr'ye eposta gönderiniz."
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__lang
+msgid "Language"
+msgstr "Dil"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_codeacademy____last_update
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_course____last_update
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner____last_update
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session____last_update
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_wizard____last_update
+msgid "Last Modified on"
+msgstr "Son Güncelleme"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_codeacademy__write_uid
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_course__write_uid
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__write_uid
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__write_uid
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_codeacademy__write_date
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_course__write_date
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__write_date
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__write_date
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_wizard__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme"
+
+#. module: codeacademy
+#: model:ir.actions.act_window,name:codeacademy.launch_session_wizard_tree
+msgid "List Attendees"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__image_medium
+msgid "Medium-sized image"
+msgstr "Orta boyutlu görsel"
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__image_medium
+msgid "Medium-sized image of this contact. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+msgstr "Kategorinin orta boyutlu görüntü. Otomatik olarak korunmuş en boy oranına sahip, bir 128x128px görüntü olarak yeniden boyutlandırılır. Form görünümleri ya da kanban görünümlerinde bu alanı kullanın."
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__mobile
+msgid "Mobile"
+msgstr "Mobil"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.course_search_view
+msgid "My Courses"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_codeacademy__name
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__name
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__name
+msgid "Name"
+msgstr "İsim"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__comment
+msgid "Notes"
+msgstr "Notlar"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__seats
+msgid "Number of seats"
+msgstr ""
+
+#. module: codeacademy
+#: selection:codeacademy.partner,type:0
+msgid "Other address"
+msgstr "Diğer Adresi"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__parent_name
+msgid "Parent name"
+msgstr "Üst Adı"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.codeacademy_session_graph_view
+msgid "Participations by course"
+msgstr ""
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.partner_instructor_form_vw
+msgid "Partner Form"
+msgstr ""
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.partner_tree_view
+msgid "Partner Tree"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__phone
+msgid "Phone"
+msgstr "Telefon"
+
+#. module: codeacademy
+#: selection:codeacademy.partner,type:0
+msgid "Private Address"
+msgstr "Kişisel Adres"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.course_form_view
+#: model_terms:ir.ui.view,arch_db:codeacademy.partner_instructor_form_vw
+msgid "Registered sessions"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__parent_id
+msgid "Related Company"
+msgstr "İlişkili Şirket"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_course__responsible_id
+#: model_terms:ir.ui.view,arch_db:codeacademy.course_search_view
+msgid "Responsible"
+msgstr "Sorumlu"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__user_id
+msgid "Salesperson"
+msgstr "Satış Temsilcisi"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.session_form_view
+msgid "Schedule"
+msgstr "Planlama"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__self
+msgid "Self"
+msgstr "Kendin"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_wizard__session_id
+msgid "Session"
+msgstr ""
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.session_calendar_view
+msgid "Session Calendar"
+msgstr ""
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.session_form_view
+msgid "Session Form"
+msgstr ""
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.session_tree_view
+msgid "Session Tree"
+msgstr ""
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.view_openacad_session_kanban
+msgid "Session name:"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.actions.act_window,name:codeacademy.session_list_action
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_course__session_ids
+#: model:ir.ui.menu,name:codeacademy.session_menu
+#: model_terms:ir.ui.view,arch_db:codeacademy.course_form_view
+#: model_terms:ir.ui.view,arch_db:codeacademy.partner_instructor_form_vw
+msgid "Sessions"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__partner_share
+msgid "Share Partner"
+msgstr "Paylaşım İş Ortağı"
+
+#. module: codeacademy
+#: selection:codeacademy.partner,type:0
+msgid "Shipping address"
+msgstr "Sevkiyat Adresi"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__image_small
+msgid "Small-sized image"
+msgstr "Küçük boyutlu görsel"
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__image_small
+msgid "Small-sized image of this contact. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr "Bu carinin küçük boylu resmi. Bu resim otomatik olarak 64x64 pixele en boy oranını koruyarak küçültülür. Bu alanı küçük resim gerektiğinde kullanabilirsiniz."
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__start_date
+msgid "Start Date"
+msgstr "Başlangıç Tarihi"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__state_id
+msgid "State"
+msgstr "Durum"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__street
+msgid "Street"
+msgstr "Sokak/Cadde"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__street2
+msgid "Street2"
+msgstr "Adres2"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.wizard_form_view
+msgid "Subscribe"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__category_id
+msgid "Tags"
+msgstr "Etiketler"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_session__taken_seats
+msgid "Taken seats"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__vat
+msgid "Tax ID"
+msgstr "Vergi Kimliği"
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__vat
+msgid "The Tax Identification Number. Complete it if the contact is subjected to government taxes. Used in some legal statements."
+msgstr ""
+
+#. module: codeacademy
+#: sql_constraint:codeacademy.course:0
+msgid "The course title must be unique"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__user_id
+msgid "The internal user in charge of this contact."
+msgstr ""
+
+#. module: codeacademy
+#: code:addons/codeacademy/models/models.py:87
+#, python-format
+msgid "The number of available seats may not be negative"
+msgstr "Uygun yer miktarı alanı negatif değer alamaz."
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__tz
+msgid "The partner's timezone, used to output proper date and time values inside printed reports. It is important to set a value for this field. You should use the same timezone that is otherwise used to pick and render date and time values: your computer's timezone."
+msgstr "Basılı raporlar içinde uygun tarih ve saat değerlerini yayınlamak için kullanılan eşin zaman dilimi. Bu alan için bir değer belirlemek önemlidir. Tarih ve saat değerlerini almak ve işlemek için kullanılan aynı saat dilimini kullanmalısınız: bilgisayarınızın saat dilimi."
+
+#. module: codeacademy
+#: sql_constraint:codeacademy.course:0
+msgid "The title of the course should not be the description"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__image
+msgid "This field holds the image used as avatar for this contact, limited to 1024x1024px"
+msgstr "Bu alan kontak resimleri için kullandığı çözünürlük sınırı 1024x1024px"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__tz
+msgid "Timezone"
+msgstr "Saat Dilimi"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__tz_offset
+msgid "Timezone offset"
+msgstr "Saat dilimi ofseti"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_course__name
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__title
+msgid "Title"
+msgstr "Başlık"
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__barcode
+msgid "Use a barcode to identify this contact from the Point of Sale."
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,help:codeacademy.field_codeacademy_partner__type
+msgid "Used by Sales and Purchase Apps to select the relevant address depending on the context."
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__user_ids
+msgid "Users"
+msgstr "Kullanıcılar"
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__website
+msgid "Website"
+msgstr "Websitesi"
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.wizard_tree_view
+msgid "Wizard Tree"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model,name:codeacademy.model_codeacademy_wizard
+msgid "Wizard: Quick Registration of Attendees to Sessions"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model.fields,field_description:codeacademy.field_codeacademy_partner__zip
+msgid "Zip"
+msgstr "PK"
+
+#. module: codeacademy
+#: model:ir.model,name:codeacademy.model_codeacademy_codeacademy
+msgid "codeacademy.codeacademy"
+msgstr ""
+
+#. module: codeacademy
+#: model:ir.model,name:codeacademy.model_codeacademy_partner
+msgid "description"
+msgstr ""
+
+#. module: codeacademy
+#: model_terms:ir.ui.view,arch_db:codeacademy.wizard_form_view
+msgid "or"
+msgstr "veya"
+
